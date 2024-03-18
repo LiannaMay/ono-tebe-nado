@@ -10,14 +10,14 @@
     margin-left: 24px;
     margin-right: 24px;
     display:grid;
-    grid-template-columns: repeat(3, 400px 300px 290px);
+    grid-template-columns: repeat(3, 454px 150px 450px);
 
 
 }
 
 /* контейнер навигации */
 .header_menu {
-    width: 391.48px;
+    width: 454px;
     height: 22px;
     top: 44px;
     padding-top: 44px;
@@ -37,6 +37,7 @@
     letter-spacing: 0em;
     text-align: left;
     column-gap: 26px;
+    padding-left: 24px;
 
     
 
@@ -79,10 +80,7 @@
 }
 /* контейнер с адресом */
 .address {
-    display: flex;
-    flex-direction: column;
-    padding-top: 5px;
-    width: 240px;
+    width: 450px;
     height: 24px;
     left: 786.52px;
     top: 5px;
@@ -93,16 +91,15 @@
     line-height: 24px;
     letter-spacing: 0.01em;
     color: #000000;
+    text-underline-position:under;
+    text-underline-offset: 1px;
 
 }
 /* для выравнивания блока с адресом */
 .header_address {
-
-
+    display: flex;
+    flex-direction: column;
+    padding-left: 184px;
+    padding-right: 25.48px;
+    padding-top: 5px;
 }
-.header_address-adress {
-    
-
-}
-
-
