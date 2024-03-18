@@ -1,1 +1,112 @@
-/* место для вашего кода */
+/* вся шапка */
+.header {
+    color: #000;
+    background-color:#fff;
+    width: 1052px;
+    height: 105px;
+    left: 24px;
+    top: 92px;
+    padding-top: 92px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 2831px;
+    display:grid;
+    grid-template-columns: repeat(3, 420px 340px 290px);
+
+
+}
+
+/* контейнер навигации */
+.header_menu {
+    width: 391.48px;
+    height: 22px;
+    left: 26.52px;
+    top: 44px;
+    padding-top: 44px;
+    margin-left: 26.52px;
+    padding-bottom: 39px;
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+/* список ссылок */
+.header_links-list {
+    display:flex;
+    flex-direction:row;
+    column-gap:25px;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    
+
+}
+/* пункты списка ссылок сами ссылки с пустым кружочком */
+.header_links-list-item {
+    list-style:circle;
+
+}
+/* пункты списка ссылок без кружочка */
+.header_links-list-item-no-bullit {
+    list-style:none;
+
+
+}
+/* ссылка подчеркнутая*/
+.header_link {
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 1px;
+
+}
+/* активная ссылка не подчеркнутая*/
+.header_link-active {
+    text-decoration: none;
+
+}
+/* контейнер логотипа */
+.header_logo {
+    display: flex;
+    justify-content:flex-start;
+
+
+}
+/* картинка с логотипом */
+.header_logo-image {
+    width: 148px;
+    height: 105px;
+
+}
+/* контейнер с адресом */
+.address {
+    width: 240px;
+    height: 24px;
+    left: 786.52px;
+    top: 5px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #000000;
+
+}
+/* для выравнивания блока с адресом */
+.header_address {
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 1px;
+
+}
+.header_address-adress {
+    text-decoration: none;
+
+
+}
+
+
