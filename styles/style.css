@@ -10,7 +10,7 @@
     margin-left: 24px;
     margin-right: 24px;
     display:grid;
-    grid-template-columns: repeat(3, 400px 380px 290px);
+    grid-template-columns: repeat(3, 400px 300px 290px);
 
 
 }
@@ -20,7 +20,6 @@
     width: 391.48px;
     height: 22px;
     top: 44px;
-    padding-left: 26.52px;
     padding-top: 44px;
     padding-bottom: 39px;
     display: flex;
@@ -31,13 +30,13 @@
 .header_links-list {
     display:flex;
     flex-direction:row;
-    column-gap:21px;
     font-family: "Raleway";
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
     letter-spacing: 0em;
     text-align: left;
+    column-gap: 26px;
 
     
 
@@ -67,8 +66,8 @@
 }
 /* контейнер логотипа */
 .header_logo {
-    display: flex;
-    justify-content:flex-start;
+    display:flex;
+    justify-content:center;
 
 
 }
@@ -80,13 +79,16 @@
 }
 /* контейнер с адресом */
 .address {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
     width: 240px;
     height: 24px;
     left: 786.52px;
     top: 5px;
     font-family: 'Raleway';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.01em;
@@ -95,14 +97,11 @@
 }
 /* для выравнивания блока с адресом */
 .header_address {
-    text-decoration: none;
-    border-bottom: 1px solid black;
-    padding-bottom: 1px;
-    margin-top: 97px;
+
 
 }
 .header_address-adress {
-    text-decoration: none;
+    
 
 }
 
