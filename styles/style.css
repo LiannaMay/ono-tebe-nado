@@ -1,11 +1,10 @@
+
 /* вся шапка */
 .header {
     color: #000;
     background-color:#fff;
     width: 1052px;
     height: 105px;
-    left: 24px;
-    top: 92px;
     margin-top: 92px;
     margin-left: 24px;
     margin-right: 24px;
@@ -36,7 +35,7 @@
     line-height: 21px;
     letter-spacing: 0em;
     text-align: left;
-    column-gap: 26px;
+    column-gap: 30px;
     padding-left: 24px;
 
     
@@ -93,13 +92,103 @@
     color: #000000;
     text-underline-position:under;
     text-underline-offset: 1px;
+    padding-left: 184px;
+    padding-right: 25.48px;
+    padding-top: 7px;
 
 }
 /* для выравнивания блока с адресом */
 .header_address {
     display: flex;
     flex-direction: column;
-    padding-left: 184px;
-    padding-right: 25.48px;
-    padding-top: 5px;
+    gap: 1px;
+
+}
+/* вся секция */
+.cover {
+
+    width: 1100px;
+    height: 757px;
+    margin-top: 96px;
+    position: relative;
+    background-image: url(../images/cover.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+
+}
+
+/* полупрозрачный блок поверх секции */
+.overlay {
+
+    background-color:rgba(0, 0, 0, 0.6);
+    inset: 0;
+    position:absolute;
+    z-index: -1;
+       
+}
+
+/* заголовок */
+.cover__title {
+    width: 1000px;
+    height: 355px;
+    z-index: 1;
+    font-size: 100px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Raleway';
+    font-style: normal;
+    padding-top: 165px;
+    padding-left: 50px;
+
+}
+
+/* классы для выравнивания строк текста и превращения их в блочный элемент */
+.aligned-text {
+    display: block;
+    letter-spacing:10px;
+    padding-bottom: 20px;
+
+}
+.aligned-text_left {
+    text-align: left;
+    letter-spacing: 0.3em;
+    line-height: 115px;
+
+}
+.aligned-text_center {
+
+    text-align: center;
+    letter-spacing: 0.3em;
+    line-height: 100px;
+
+}
+
+.aligned-text_right {
+    text-align: right;
+    letter-spacing: 0.6em;
+    line-height: 100px;
+
+}
+
+/* класс для управления межбуквенным расстоянием в местах, где есть эти акцент */
+.letter-spacing-extended {
+
+}
+ /* класс для обнуления общего межбуквенного расстояния для последней буквы */
+.no-letter-spacing {
+
+}
+/* контейнер для подзаголовка и кнопки */
+.cover__description {
+
+}
+
+/* текст подзаголовка */
+.cover__description-text {
+
+}
+ /* кнопка «Сделать ставку» */
+.bet-button {
+
 }
