@@ -55,7 +55,7 @@
 /* ссылка подчеркнутая*/
 .header_link {
     text-decoration: underline;
-    text-underline-offset:initial;
+    text-decoration-skip-ink: none;
 
 }
 /* активная ссылка не подчеркнутая*/
@@ -107,7 +107,7 @@
 .cover {
 
     width: 1100px;
-    height: 757px;
+    height:757px;
     margin-top: 96px;
     position: relative;
     background-image: url(../images/cover.jpg);
@@ -131,8 +131,7 @@
 .cover__title {
     top: 165px;
     position: relative;
-    width: 1000px;
-    height: 355px;
+    width: 1100px;
     z-index: 1;
     font-size: 100px;
     font-weight: 700px;
@@ -140,7 +139,6 @@
     text-transform: uppercase;
     font-family: 'Raleway';
     font-style: normal;
-    padding-left: 50px;
 
 }
 
@@ -148,12 +146,14 @@
 .aligned-text {
     display: block;
     padding-bottom: 20px;
-    letter-spacing: 30px;
+    letter-spacing: 0.23em;
+    gap: 20px;
 
 }
 .aligned-text_left {
     text-align: left;
     line-height: 115px;
+    padding-left: 50px;
    
 
 }
@@ -168,19 +168,20 @@
 .aligned-text_right {
     text-align: right;
     line-height: 100px;
+    padding-right: 50px;
     
 
 }
 
 /* класс для управления межбуквенным расстоянием в местах, где есть эти акцент */
 .letter-spacing-extended {
-    letter-spacing: 60px;
+    letter-spacing: 0.23em;
     
 
 }
  /* класс для обнуления общего межбуквенного расстояния для последней буквы */
 .no-letter-spacing {
-    letter-spacing: 0;
+    letter-spacing: 0px;
     
 
 }
@@ -194,7 +195,7 @@
     font-style: normal;
     color: #fff;
     text-transform: uppercase;
-    letter-spacing:0.1em;
+    letter-spacing:0.15em;
     font-size: 22px;
     padding-top: 300px;
     padding-right: 50px;
@@ -231,5 +232,166 @@
     opacity: 0px;
     border-style: solid;
 
+}
+/* вся секция с лотами */
+.lots {
+    position: relative;
+    margin-top: 179px;
+    width: 1052px;
+    z-index: 0;
+    margin-left: 24px;
 
+}
+/* заголовок секции */
+.lots__heading {
+    margin-left: 40px;
+    width: 121px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    text-transform: uppercase;
+    color: #000000;
+
+
+}
+/* списиок лотов */
+.lots__card-list {
+    padding-top: 27px;
+    gap:25px;
+    list-style-type:none;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    
+
+
+}
+/* пункт списка лотов */
+.lots__card-list-item {
+    flex-grow: 1;
+    width: 334px;
+    height: 563px;
+    gap:25px;
+    list-style-type:none;
+    color: #FFFFFF;
+
+
+}
+/* ссылка, обрамляющая карточку */
+.card-link {
+    text-decoration: none;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 51px;
+    padding-bottom: 48px;
+    height: 100%;
+  
+}
+/* карточка */
+.card {
+    width: 334px;
+    height: 100%;
+
+}
+/* классы, чтобы задать определённый фон каждой из карточек */
+.card_type_film {
+    position: relative;
+    z-index: 0;
+    background-image: url(../images/card-lot-01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.card_type_book {
+    position: relative;
+    z-index: 0;
+    background-image: url(../images/card-lot-02.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.card_type_picture {
+    position: relative;
+    z-index: 0;
+    background-image: url(../images/card-lot-03.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+/* заголовок карточки */
+.card__title {
+    width: 254px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 120%;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    z-index: 1;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    order: 0;
+
+}
+/* текст карточки */
+.card__text {
+    width: 254px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: #FFFFFF;
+    z-index: 1;
+    text-decoration: none;
+    order: 1;
+}
+/* ссылка «Посмотреть больше» */
+.lots__look-more-link {
+    position: relative;
+    width: 192px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    padding-top: 30px;
+}
+
+.about {
+
+}
+
+.about__column {
+
+}
+
+.about__logo {
+
+}
+
+.about__logo-image {
+
+}
+
+.about__title {
+
+}
+
+.about__text {
+    
 }
