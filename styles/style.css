@@ -70,7 +70,7 @@
     max-width: 240px;
     font-family: 'Raleway';
     font-style: normal;
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.01em;
@@ -114,7 +114,7 @@
     position: relative;
     z-index: 1;
     font-size: 100px;
-    font-weight: 700px;
+    font-weight: 700;
     color: #fff;
     text-transform: uppercase;
     font-family: 'Raleway';
@@ -134,7 +134,6 @@
     padding-top: 10px; 
     text-align: left;
     line-height: calc(100 / 115 * 100%);
-   
 
 }
 .aligned-text_center {
@@ -198,14 +197,14 @@
     cursor: pointer;
     overflow: hidden;
     position: relative;
-    line-height: calc (26 / 22 * 100%);
+    line-height: calc(26 / 22 * 100%);
     text-align: center;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
     text-transform: uppercase;
-    border: 1px 0px 0px 0px;
+    border: 1px 0px 0px;
     border-style: solid;
     padding: 12px 32px 11px 31px;
 }
