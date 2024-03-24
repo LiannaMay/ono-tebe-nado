@@ -133,7 +133,7 @@
 .aligned-text_left {
     padding-top: 10px; 
     text-align: left;
-    line-height:calc(100 / 115 * 100%);
+    line-height: calc(100 / 115 * 100%);
    
 
 }
@@ -207,7 +207,6 @@
     text-transform: uppercase;
     border: 1px 0px 0px 0px;
     border-style: solid;
-    cursor: pointer;
     padding: 12px 32px 11px 31px;
 }
 /* вся секция с лотами */
@@ -384,12 +383,11 @@
 }
 /* заголовок секции */
 .about__title {
-    width: 291px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
-    line-height: 47px;
+    /* line-height: 47px; */
     text-transform: uppercase;
     padding-top: 58px;
     padding-bottom: 100px;
@@ -419,7 +417,7 @@
     background-color:#fff;
     padding: 156px 50px 88px;
     display: grid;
-    grid-template-columns: 426px 150px 425px;
+    grid-template-columns: 1fr 1fr 1fr;
 
 }
 
@@ -427,6 +425,7 @@
 /* блок навигации по списку ссылок */
 .footer__menu {
     display: flex;
+    justify-content: center;
 
 
 }
@@ -441,7 +440,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 21.13px;
-    letter-spacing: 0em;
+    /* letter-spacing: 0em; */
 
 }
 
